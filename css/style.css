@@ -1,0 +1,256 @@
+#conteneur {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 30% 15% 75% 20%;
+    grid-template-areas:
+        "header header header header"
+        "nav    nav    nav    nav"
+        "main   main   main   main"
+        "footer footer footer footer";
+}
+
+#profession {
+    display: grid;
+    margin: auto;
+    grid-template-areas:
+        "main1  main6"
+        "main2  main7"
+        "main3  main8"
+        "main4  main9"
+        "main5  main10";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    background-color: rgb(0, 255, 55);
+    grid-area: footer;
+    color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+}
+
+.image {
+    float: right;
+    border-radius: 50%;
+}
+
+main img {
+    max-width: 500px;
+    max-height: 350px;
+}
+
+.lien,
+a {
+    color: red;
+    text-decoration: none;
+    display: inline;
+}
+
+.lien:hover {
+    color: rgb(0, 150, 255);
+}
+
+a:hover {
+    color: rgb(0, 150, 255);
+}
+
+.un {
+    grid-area: main1;
+    border: solid 1px black;
+}
+
+.deux {
+    grid-area: main2;
+    border: solid 1px black;
+}
+
+.trois {
+    grid-area: main3;
+    border: solid 1px black;
+}
+
+.quatre {
+    grid-area: main4;
+    border: solid 1px black;
+}
+
+.cinq {
+    grid-area: main5;
+    border: solid 1px black;
+}
+
+.six {
+    grid-area: main6;
+    border: solid 1px black;
+}
+
+.sept {
+    grid-area: main7;
+    border: solid 1px black;
+}
+
+.huit {
+    grid-area: main8;
+    border: solid 1px black;
+}
+
+.neuf {
+    grid-area: main9;
+    border: solid 1px black;
+}
+
+.dix {
+    grid-area: main10;
+    border: solid 1px black;
+}
+
+.grey {
+    transition: .5s ease-in;
+    filter: grayscale(100%);
+    padding: 20px;
+}
+
+.grey:hover {
+    filter: grayscale(0%);
+}
+
+.ordi {
+    object-fit: cover;
+    transition: 1s ease;
+    padding: 20px;
+}
+
+.ordi:hover {
+    transform: scale(1.4);
+}
+
+.manette {
+    box-shadow: 0px 0px 12px grey;
+    margin: 20px;
+}
+
+.nintendo {
+    margin: 20px;
+    box-shadow: 0px 0px 5px #fe21a2,
+        0px 0px 30px #fe21a2,
+        0px 0px 90px #fe21a2;
+}
+
+.vr:hover {
+
+    transform: rotate(60deg);
+    transition: 1s ease-in;
+}
+
+#horaire {
+    display: grid;
+    margin: auto;
+    grid-template-areas:
+        "heure1     math1     vide4         prog2     exploitation2 vide11"
+        "heure2     math1     vide4         prog2     exploitation2 vide11"
+        "heure3     vide1     math2         français2 vide9         web"
+        "heure4     philo1    vide5         français2 vide9         web"
+        "heure5     philo1    vide5         vide7     vide9         web"
+        "heure6     vide2     vide5         vide7     prog3         vide12"
+        "heure7     prog1     exploitation1 vide7     prog3         vide12"
+        "heure8     prog1     exploitation1 vide7     math3         prog4"
+        "heure9     vide3     exploitation1 philo2    math3         prog4"
+        "heure10    français1 vide6         philo2    vide10        vide13"
+        "heure11    français1 vide6         vide8     vide10        vide13";
+}
+.cellule{
+    border: 1px solid black;
+}
+#prog1{
+    grid-area: prog1;
+}
+#prog2{
+    grid-area: prog2;
+}
+#prog3{
+    grid-area: prog3;
+}
+#prog4{
+    grid-area: prog4;
+}
+#math1{
+    grid-area: math1;
+}
+#math2{
+    grid-area: math2;
+}
+#math3{
+    grid-area: math3;
+}
+#exploitation1{
+    grid-area: exploitation1;
+}
+#exploitation2{
+    grid-area: exploitation2;
+}
+#français1{
+    grid-area: français1;
+}
+#français2{
+    grid-area: français2;
+}
+#philo1{
+    grid-area: philo1;
+}
+#philo2{
+    grid-area: philo2;
+}
+#web{
+    grid-area: web;
+}
+#heure1{
+    grid-area: heure1;
+}
+#heure2{
+    grid-area: heure2;
+}
+#heure3{
+    grid-area: heure3;
+}
+#heure4{
+    grid-area: heure4;
+}
+#heure5{
+    grid-area: heure5;
+}
+#heure6{
+    grid-area: heure6;
+}
+#heure7{
+    grid-area: heure7;
+}
+#heure8{
+    grid-area: heure8;
+}
+#heure9{
+    grid-area: heure9;
+}
+#heure10{
+    grid-area: heure10;
+}
+#heure11{
+    grid-area: heure11;
+    height: 100px;
+}
